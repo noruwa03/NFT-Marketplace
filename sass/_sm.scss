@@ -1,0 +1,119 @@
+@media screen and (max-width: 668px) {
+  /**********************/
+  /*    General Style   */
+  /**********************/
+  .nft_card_menu {
+    z-index: 14;
+    position: fixed;
+    top: 1.2rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: block;
+    i {
+      font-size: 1.5em;
+      z-index: 100;
+    }
+  }
+
+  /**********************/
+  /*     User Style     */
+  /**********************/
+  .user {
+    position: fixed;
+    top: 1.2rem;
+    right: 1rem;
+    z-index: 10;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  /**********************/
+  /*  Dashboard Styles  */
+  /**********************/
+  .nft-card-bg {
+    .nft_card_links {
+      &.active {
+        ul {
+          @include flexItem(row, center);
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          li {
+            margin: 1rem 1.3rem;
+          }
+        }
+      }
+    }
+
+    .nft-card {
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      .card-row {
+        .row-1 {
+          width: 100%;
+
+          .col_ {
+            h3 {
+              margin-bottom: 2rem;
+            }
+
+            img {
+              width: 90%;
+            }
+
+            .nft-name {
+              font-size: 1.7em;
+              margin: 2rem 0;
+            }
+
+            .owner {
+              font-size: 1.2em;
+            }
+          }
+        }
+        .row-2 {
+          width: 100%;
+
+          .col_ {
+            h3 {
+              margin: 1em 0 1.3rem 0;
+            }
+
+            width: 100%;
+            .row_ {
+              .card_ {
+                width: 90%;
+                margin-bottom: 1.4rem;
+
+                .card-row {
+                  display: none;
+                }
+
+                &:hover {
+                  transition: all 1s ease;
+                  .card-row {
+                    .price {
+                      font-size: 1.12em;
+                    }
+
+                    .view-more {
+                      font-size: 0.9em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

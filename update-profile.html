@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Profile</title>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/icons-1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/sass/styles.css" />
+  </head>
+
+  <body>
+    <form>
+      <div id="">
+        <!-- Start of container-lg -->
+        <div class="container-lg py-3">
+          <div class="row align-items-center justify-content-sm-between pt-4">
+            <div class="col-sm-6">
+              <div class="h2 text-white">Update Profile</div>
+              <p class="fw-normal text-muted">
+                Please input detail information carefully.
+              </p>
+            </div>
+          </div>
+
+          <div class="card profile-card py-4 px-4 my-3">
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-sm-6">
+                <div class="h4">Personal Info</div>
+                <p class="fw-normal">
+                  Add common infomation like Name, Email etc.
+                </p>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-sm-between">
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="fullname">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control mt-2"
+                  id="fullname"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="dob">Date of Birth</label>
+                <input
+                  type="date"
+                  class="form-control mt-2"
+                  id="dob"
+                  placeholder="dd-mm-yyyy"
+                />
+              </div>
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="gender">Gender</label>
+                <select name="" class="form-select" id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control mt-2"
+                  id="phone"
+                  placeholder="phone no"
+                />
+              </div>
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control mt-2"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="status">Status</label>
+                <select name="" class="form-select" id="status">
+                  <option value="Active">Active</option>
+                  <option value="Inactive">Inactive</option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 mt-4">
+                <label for="status">Role</label>
+                <select name="" class="form-select" id="status">
+                  <option value="Active">Admin</option>
+                  <option value="Inactive">Staff</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mt-4">
+              <label for="avatar">Avatar</label>
+              <input type="file" class="form-control mt-2" id="avatar" />
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-4">
+              <div class="form-floating">
+                <textarea
+                  name=""
+                  id="address"
+                  class="form-control"
+                  style="height: 5rem; resize: none"
+                ></textarea>
+                <label for="address" class="form-label text-muted"
+                  >Address</label
+                >
+              </div>
+            </div>
+            <!-- end of row -->
+
+            <div class="row">
+              <div class="col-sm-4">
+                <button class="btn btn-o-p btn-outline-primary text-white mt-4">
+                  Update
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of container-lg -->
+      </div>
+    </form>
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+      <img src="/assets/images/up-arrow.png" alt="alternative" />
+    </button>
+    <!-- end of back to top button -->
+
+    <!-- App JavaScript Functions -->
+    <script src="/javascript/app.js"></script>
+  </body>
+</html>

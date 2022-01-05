@@ -1,0 +1,82 @@
+@media screen and (max-width: 480px) {
+  /**********************/
+  /*  Dashboard Styles  */
+  /**********************/
+  .nft-card-bg {
+    .nft_card_links {
+      &.active {
+        ul {
+          @include flexItem(column, space-between);
+
+          li {
+            margin: 1.3rem 0;
+          }
+        }
+      }
+    }
+
+    .nft-card {
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      .card-row {
+        .row-1 {
+          width: 100%;
+
+          .col_ {
+            h3 {
+              margin-bottom: 2rem;
+            }
+
+            img {
+              width: 90%;
+            }
+
+            .nft-name {
+              font-size: 1.7em;
+              margin: 2rem 0;
+            }
+
+            .owner {
+              font-size: 1.2em;
+            }
+          }
+        }
+        .row-2 {
+          width: 100%;
+
+          .col_ {
+            h3 {
+              margin: 0 0 1.3rem 0;
+            }
+
+            width: 100%;
+            .row_ {
+              .card_ {
+                width: 90%;
+                margin-bottom: 1.4rem;
+
+                .card-row {
+                  display: none;
+                }
+
+                &:hover {
+                  transition: all 1s ease;
+                  .card-row {
+                    .price {
+                      font-size: 1.12em;
+                    }
+
+                    .view-more {
+                      font-size: 0.9em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
