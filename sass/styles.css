@@ -587,6 +587,7 @@ body {
   .nft_card_menu i {
     font-size: 1.5em;
     z-index: 100;
+    color: #fff;
   }
   /**********************/
   /*     User Style     */
@@ -610,6 +611,7 @@ body {
   }
   .nft-card-bg .nft_card_links {
     position: relative;
+    background: #1e262c;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -618,6 +620,7 @@ body {
     visibility: hidden;
     top: 0;
     left: 0;
+    z-index: 8;
     overflow-x: hidden;
     overflow-y: auto;
   }
