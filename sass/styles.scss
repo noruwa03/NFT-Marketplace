@@ -7,6 +7,7 @@ Table Of Contents:
 - Font
 - General Styles
 - Dashboard Styles
+- Profile Card
 - Favorite NFT
 - Back To Top Button
 - Loader
@@ -139,7 +140,7 @@ body {
 
 .form-control:focus {
   border-color: $primary;
-  // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $btn-bg;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $bg;
 }
 
 .btn-o-p {
@@ -219,7 +220,6 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    // background: red;
 
     ul {
       position: relative;
@@ -251,7 +251,6 @@ body {
   .nft_card_links {
     position: relative;
     top: 0.2rem;
-    // background: red;
     width: 90%;
     margin: 0 auto;
     height: 4rem;
@@ -418,10 +417,60 @@ body {
   }
 }
 
+/******************************/
+/*         Profile Card       */
+/******************************/
+
 .profile-card {
   background: $primary;
   border-radius: 0.6rem;
   color: #fff;
+  width: 100%;
+
+  .cover-bg {
+    position: relative;
+    .cover-img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 16rem;
+      border-radius: 0.6rem;
+    }
+
+    .avatar {
+      width: 11rem;
+      height: 11rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+  }
+
+  .profile-card {
+    width: 70%;
+    margin: 1.56rem auto;
+    padding-top: 4rem;
+
+    .user-info {
+      margin: 1rem 0 2rem 0;
+   
+      
+    }
+
+    .card {
+      border-radius: 0.35rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $divider-bg;
+        transition: all 0.3s ease;
+      }
+    }
+  }
 }
 
 /******************************/
@@ -431,7 +480,6 @@ body {
 #favorite-nft {
   .card {
     border-radius: 0.6rem;
-
 
     .owner-avatar {
       width: 2.2rem;
