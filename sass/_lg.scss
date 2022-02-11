@@ -1,3 +1,124 @@
-@media  screen and (max-width: 1025px) {
-    
+@media screen and (max-width: 1023px) {
+  /**********************/
+  /*  Dashboard Styles  */
+  /**********************/
+  .nft-card-bg {
+    height: 100%;
+    width: 100%;
+
+    .navbar_ {
+      display: none;
+    }
+
+    .nft_card_links {
+      position: relative;
+      background: $bg;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      z-index: 8;
+
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &.active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+
+        ul {
+          @include flexItem(row, center);
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          li {
+            margin: 1rem 1.3rem;
+          }
+        }
+      }
+    }
+
+    .nft-card {
+      position: fixed;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      .card-row {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .row-1 {
+          width: 60%;
+
+          .col_ {
+            @include flexItem(column, space-around);
+
+            h3 {
+              margin-bottom: 1rem;
+            }
+
+            img {
+              width: 70%;
+            }
+
+            .nft-name {
+              font-size: 2em;
+
+              margin-top: 1.3rem;
+            }
+
+            .owner {
+              font-size: 1.2em;
+            }
+          }
+        }
+        .row-2 {
+          width: 100%;
+
+          .col_ {
+            h3 {
+              text-align: center;
+              margin: 3rem 0 2rem 0;
+            }
+            width: 100%;
+            .row_ {
+              .card_ {
+                &:hover {
+                  .card-row {
+                    .price {
+                      font-size: 1em;
+                    }
+
+                    .view-more {
+                      font-size: 0.85em;
+                    }
+                  }
+                }
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
